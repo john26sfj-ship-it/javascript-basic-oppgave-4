@@ -1,8 +1,58 @@
 :root {
-    --gradient-start-color: #f6f0eb;    /* Background gradient */
+    --gradient-start-color: #e2d0c2;    /* Background gradient */
     --gradient-end-color: #e3e0cf;
+    --my-gradient: linear-gradient(to right, var(--gradient-start-color), var(--gradient-end-color));
     --primaryTextColor: #442c18;
-    --buttonBackground: #c2bb98;
-    --accentColor: #8c8c8c;
+    --buttonBackground: #d5d1b8;
+    --accentColor: #c2bb98;
+    --fontLogoH2Button: "Lilita One", sans-serif;
+    --fontSlogan: "Great Vibes", cursive;
+    --fontText: "Nova Slim", system-ui;
 }
 
+html {
+    background-image: var(--my-gradient);
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+.text-color {
+    color: var(--primaryTextColor);
+}
+
+.banner {
+    min-width: 100vh;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 97px 0 20px;
+    font-family: var(--fontLogoH2Button);
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.slogan {
+    font-family: var(--fontSlogan);
+    font-size: 64px;
+}
+
+.navbar {
+    margin: 0 20px 0 0;
+}
+
+.btn {
+    width: 114px;
+    height: 40px;
+    background-color: var(--buttonBackground);
+    font-family: var(--fontLogoH2Button);
+    font-size: 16px;
+    border: 1px solid var(--accentColor);
+    border-radius: 8px;
+}
