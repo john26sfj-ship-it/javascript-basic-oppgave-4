@@ -102,15 +102,55 @@ h2, p {
 }
 
 .form-frame {
-    border: 1px solid black;
-    width: 40%;
+    width: 30%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10%;
+    border: var(--borders);
+    border-radius: 8px;
 }
 
 #booking-form {
-    border: 1px solid black;
+    border: none;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 2px solid #A49A65 ;
+    border-radius: 8px;
+    background-color: var(--buttonBackground);
+    color: var(--primaryTextColor);
+    font-family: var(--fontText);
+    font-weight: bolder;
+}
+
+.form-group label {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group input {
+    width: 200px;
+    text-align: right;
+    border: 2px solid #A49A65 ;
+    border-radius: 8px;
+}
+
+.form-group input[type="date"] {
+  width: 203px;
+  color: var(--primaryTextColor);
+  font-family: var(--fontText);
+}
+
+.submit {
+    font-family: var(--fontLogoH2Button);
+    background-color: var(--buttonBackground);
+    color: var(--primaryTextColor);
+    border: 2px solid #A49A65 ;
+    border-radius: 8px;    
 }
