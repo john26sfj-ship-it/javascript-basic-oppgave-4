@@ -101,13 +101,20 @@ h2, p {
     margin-top: 1.5%;
 }
 
+.horizontal-frame {
+    margin-top: 150px;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
 .form-frame {
     width: 30%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10%;
     border: var(--borders);
     border-radius: 8px;
 }
@@ -153,4 +160,28 @@ h2, p {
     color: var(--primaryTextColor);
     border: 2px solid #A49A65 ;
     border-radius: 8px;    
+}
+
+.selection-frame {
+    width: 30%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px 0 0 25px;
+    border: var(--borders);
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.choice-style {
+    width: 255px;
+    text-align: left;
+    font-family: var(--fontText);
+    color: var(--primaryTextColor);
+    padding: 16.4px;
+    background-color: var(--buttonBackground);;
+    border: 2px solid #A49A65 ;
+    border-radius: 8px;
 }
