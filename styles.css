@@ -8,6 +8,7 @@
     --fontLogoH2Button: "Lilita One", sans-serif;
     --fontSlogan: "Great Vibes", cursive;
     --fontText: "Nova Slim", system-ui;
+    --borders: 4px solid #A49A65;
 }
 
 html {
@@ -19,12 +20,20 @@ body {
     margin: 0;
 }
 
+.body-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .text-color {
     color: var(--primaryTextColor);
 }
 
 .banner {
     min-width: 100vh;
+    width: 100%;
     height: 85px;
     display: flex;
     justify-content: space-between;
@@ -55,4 +64,43 @@ body {
     font-size: 16px;
     border: 1px solid var(--accentColor);
     border-radius: 8px;
+}
+
+.content-frame {
+    width: 50%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+.join-us {
+    width: 68%;
+    height: 294;
+    margin: 10px 20px 13px 20px;
+    border: var(--borders);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2, p {
+    color: var(--primaryTextColor);
+    font-family: var(--fontText);
+}
+
+.intro {
+    margin: 0 20px 20px 20px;
+}
+
+.atelier {
+    width: 700px;
+    border: var(--borders);
+    border-radius: 8px;
+    align-self: center;
+    margin-top: 1.5%;
 }
