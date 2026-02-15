@@ -175,8 +175,8 @@ h2, p {
     gap: 10px;
 }
 
-.choice-style {
-    width: 255px;
+.choice-line {
+    width: 70%;
     text-align: left;
     font-family: var(--fontText);
     color: var(--primaryTextColor);
