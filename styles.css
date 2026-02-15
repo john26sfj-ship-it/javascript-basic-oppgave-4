@@ -302,7 +302,7 @@ h3 {
 
 .review {
     width: 80%;
-    background: #fff8e1;
+    background: var(--my-gradient);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     margin-bottom: 16px;
