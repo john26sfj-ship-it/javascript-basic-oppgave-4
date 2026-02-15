@@ -164,15 +164,14 @@ h2, h3 p {
 
 .selection-frame {
     width: 30%;
-    height: 375px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 25px 0 0 25px;
+    justify-content: center;
+    align-items: center;
     border: var(--borders);
     border-radius: 8px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .choice-line {
