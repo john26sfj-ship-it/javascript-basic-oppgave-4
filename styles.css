@@ -280,3 +280,44 @@ h3 {
     box-shadow: 0 8px 32px rgba(0,0,0,0.28);
     z-index: 10 !important;
 }
+
+.review-section {
+    width: 68%;
+    margin: 100px 20px 13px 20px;
+    border: var(--borders);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--buttonBackground);
+    padding: 24px 0;
+}
+
+.review-section h2 {
+    font-family: var(--fontLogoH2Button);
+    color: var(--primaryTextColor);
+    margin-bottom: 18px;
+}
+
+.review {
+    width: 80%;
+    background: #fff8e1;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    font-family: var(--fontText);
+    font-style: bold;
+    color: var(--primaryTextColor);
+    text-align: left;
+}
+.review span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: var(--primaryTextColor);
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
