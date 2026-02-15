@@ -13,7 +13,7 @@
 
 html {
     background-image: var(--my-gradient);
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 body {
@@ -211,4 +211,72 @@ h3 {
 #total-price {
     height: 15px;
     margin: 0;
+}
+
+.available-frame {
+    width: 1920px;
+    height: 995px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.examples {
+    background-color: var(--buttonBackground);
+    color: var(--primaryTextColor);
+    font-family: var(--fontLogoH2Button);
+    border: var(--borders);
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+    padding: 0 20px;
+    margin: 60px 0 50px 50px;
+}
+
+.fan-gallery {
+    position: relative;
+    width: 500px;
+    height: 320px;
+    margin: 60px 0 0 -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fan-image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform-origin: bottom center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fan-image:nth-child(1) {
+    transform: translateX(-180px) rotate(-18deg);
+    z-index: 1;
+}
+.fan-image:nth-child(2) {
+    transform: translateX(-60px) rotate(-6deg);
+    z-index: 2;
+}
+.fan-image:nth-child(3) {
+    transform: translateX(60px) rotate(6deg);
+    z-index: 2;
+}
+.fan-image:nth-child(4) {
+    transform: translateX(180px) rotate(18deg);
+    z-index: 1;
+}
+
+.fan-image.fan-active {
+    transform: translateY(-20px) scale(1.08) !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+    z-index: 10 !important;
 }
