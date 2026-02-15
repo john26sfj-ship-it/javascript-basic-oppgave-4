@@ -23,3 +23,30 @@ if (feedbackClick) {
         window.open("feedback.html", "_self")
     })
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+
+    const checkboxes = document.querySelectorAll(".choice");
+    const totalPriceElement = document.getElementById("total-price");
+
+
+    // Add event listeners to checkboxes to call totalPrice on change
+    checkboxes.forEach(cb => cb.addEventListener("change", () => totalPrice(checkboxes, totalPriceElement)));
+
+    // Optionally, call totalPrice on page load to initialize
+    totalPrice(checkboxes, totalPriceElement);
+
+});
+
+function totalPrice(checkboxes, totalPriceElement) {
+    if (totalPriceElement) {
+        let total = 0;
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked) {
+                total += parseFloat(checkbox.value);
+            }
+        });
+        totalPriceElement.textContent = total + " kr";
+    }
+}
+

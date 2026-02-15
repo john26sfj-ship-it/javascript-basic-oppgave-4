@@ -84,7 +84,7 @@ body {
     align-items: center;
 }
 
-h2, p {
+h2, h3 p {
     color: var(--primaryTextColor);
     font-family: var(--fontText);
 }
@@ -181,7 +181,35 @@ h2, p {
     font-family: var(--fontText);
     color: var(--primaryTextColor);
     padding: 16.4px;
-    background-color: var(--buttonBackground);;
+    background-color: var(--buttonBackground);
     border: 2px solid #A49A65 ;
     border-radius: 8px;
+}
+
+.total-container {
+    margin-top: 3%;
+    width: 20%;
+    height: 50px;
+    text-align: left;
+    font-family: var(--fontText);
+    color: var(--primaryTextColor);
+    padding: 16.4px;
+    background-color: var(--buttonBackground);
+    border: var(--borders);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+h3 {
+    height: 15px;
+    margin: 0;
+}
+
+#total-price {
+    height: 15px;
+    margin: 0;
 }
